@@ -1,67 +1,93 @@
-#include<stdio.h>
-int main(){
-    printf("Desafio trunfo de cartas!\n");
-    printf("Carta 1 \n");
+#include <stdio.h>
 
-    char Estado = 'A';
-    char Código [20] = 'A01';
-    char Nome[20] = "Minas gerais";
-    int População = 213.22691;
-    float Área = 586.528;
-    float Pib = 272.3;
-    int Pontos = 21;
-    
-    printf("Nome do Estado: \n");
-    scanf("%c", &Estado);
+int main() {
+  // Declaração das variáveis da Carta 1
+  char estado1;                
+  char codigo1[5];                
+  char nome_da_cidade1[50];       
+  int populacao1;                 
+  float area1;                    
+  float pib1;                     
+  int pontos_turisticos1;         
 
-    printf("Qual é o Código do Estado: \n");
-    scanf("%s", &Código);
+  // Declaração das variáveis da Carta 2
+  char estado2;
+  char codigo2[5];
+  char nome_da_cidade2[50];
+  int populacao2;
+  float area2;
+  float pib2;
+  int pontos_turisticos2;
 
-    printf("Nome da cidade: \n");
-    scanf(" %s", &Nome);
+  // Exibe o título do jogo
+  printf("---------Super Trunfo---------\n");
+  printf("Bem-Vindo ao Jogo Super Trunfo\n");
 
-    printf("População: \n");
-    scanf("%f" , &População);
+  // Entrada de dados da Carta 1
+  printf("\nCarta 1");
+  printf("\nInforme a sigla do estado da carta 1:\n ");
+  scanf(" %c", &estado1);
 
-    printf("Tamanho da Área: \n");
-    scanf(" %d" , &Área);
-    
-    printf("Pib: \n ");
-    scanf(" %d" , &Pib);
+  printf("Informe o código da carta 1:\n ");
+  scanf(" %5s", codigo1); 
 
-    printf("Número de pontos turisticos: \n");
-    scanf(" %c" , &Pontos);
+  printf("Informe o nome da cidade da carta 1:\n ");
+  scanf(" %49s", nome_da_cidade1);
 
-printf("Carta 2 \n");
+  printf("Informe a população da carta 1:\n ");
+  scanf("%d", &populacao1);
 
-char ESTADO = 'B';
-char CÓDIGO[20] = "B01";
-char NOME[20] = "Goiás";
-int POPULAÇÃO = 7350.483;
-float ÁREA = 340.086;
-float PIB = 336.7;
-int PONTOS = 50;
+  printf("Informe a área da carta 1 (em km²):\n ");
+  scanf(" %f", &area1);
 
-printf("Nome do Estado: \n");
-    scanf("%c", &ESTADO);
+  printf("Informe o PIB da carta 1 (em bilhões de reais):\n ");
+  scanf("%f", &pib1);
 
-    printf("Qual é o Código do Estado: \n");
-    scanf("%s", &CÓDIGO);
+  printf("Informe o número de pontos turísticos da carta 1:\n ");
+  scanf("%d", &pontos_turisticos1);
 
-    printf("Nome da cidade: \n");
-    scanf(" %s", &NOME);
+  // Entrada de dados da Carta 2
+  printf("\nCarta 2");
+  printf("\nInforme a sigla do estado da carta 2:\n ");
+  scanf(" %c", &estado2);
 
-    printf("População: \n");
-    scanf("%f" , &POPULAÇÃO);
+  printf("Informe o código da carta 2:\n ");
+  scanf(" %5s", codigo2);
 
-    printf("Tamanho da Área: \n");
-    scanf(" %d" , &ÁREA);
-    
-    printf("Pib: \n ");
-    scanf(" %d" , &PIB);
+  printf("Informe o nome da cidade da carta 2:\n ");
+  scanf(" %49s", nome_da_cidade2);
 
-    printf("Número de pontos turisticos: \n");
-    scanf(" %c" , &PONTOS);
+  printf("Informe a população da carta 2:\n ");
+  scanf("%d", &populacao2);
 
-    return 0;
+  printf("Informe a área da carta 2 (em km²) \n: ");
+  scanf(" %f", &area2);
+
+  printf("Informe o PIB da carta 2 (em bilhões de reais): \n ");
+  scanf(" %f", &pib2);
+
+  printf("Informe o número de pontos turísticos da carta 2: ");
+  scanf("%d", &pontos_turisticos2);
+
+  // Exibir os dados da Carta 1
+  printf("\n===== Carta 1 =====\n");
+  printf("Estado: %c\n", estado1);
+  printf("Código: %s\n", codigo1);
+  printf("Nome da Cidade: %s\n", nome_da_cidade1);
+  printf("População: %d\n", populacao1);
+  printf("Área: %.2f km²\n", area1);
+  printf("PIB: %.2f bilhões de reais\n", pib1);
+  printf("Número de Pontos Turísticos: %d\n", pontos_turisticos1);
+
+  // Exibir os dados da Carta 2
+  printf("\n===== Carta 2 =====\n");
+  printf("Estado: %c\n", estado2);
+  printf("Código: %s\n", codigo2);
+  printf("Nome da Cidade: %s\n", nome_da_cidade2);
+  printf("População: %d\n", populacao2);
+  printf("Área: %.2f km²\n", area2);
+  printf("PIB: %.2f bilhões de reais\n", pib2);
+  printf("Número de Pontos Turísticos: %d\n", pontos_turisticos2);
+
+  return 0;
 }
